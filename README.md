@@ -5,7 +5,7 @@
 
 ## Overview
 
-This is a camera app that continuously detects the objects (bounding boxes and classes) in the frames seen by your device's back camera, using a quantized [Yolov5](https://github.com/ultralytics/yolov5) model. These instructions walk you through building and running the demo on an iOS device.
+This is a camera app that continuously detects the objects (bounding boxes and classes) in the frames seen by your device's back camera, using a [Yolov5](https://github.com/ultralytics/yolov5) model. These instructions walk you through building and running the demo on an iOS device.
 
 <!-- TODO(b/124116863): Add app screenshot. -->
 
@@ -45,10 +45,10 @@ You'll have to grant permissions for the app to use the device's camera. Point t
 
 This app uses a [Yolov5](https://github.com/ultralytics/yolov5) model.
 
-Convert the model trained in [Yolov5](https://github.com/ultralytics/yolov5) into a tflite model through export.py in the [Yolov5 repository](https://github.com/ultralytics/yolov5).
+Please convert the custom model trained in [Yolov5](https://github.com/ultralytics/yolov5) into a tflite model through export.py in the [Yolov5 repository](https://github.com/ultralytics/yolov5).
 
 ## iOS App Details
 
 The app is written entirely in Swift and uses the TensorFlow Lite
 [Swift library](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/swift)
-for performing image classification.
+for performing object detection.
