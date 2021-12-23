@@ -43,9 +43,10 @@ You'll have to grant permissions for the app to use the device's camera. Point t
 
 ## Model Used
 
-This app uses a [yolov5](https://github.com/ultralytics/yolov5) model.
+This app uses a [YOLOv5](https://github.com/ultralytics/yolov5) model.
 
 To use YOLOv5's custom training model, convert it to a tflite model through export.py in the [YOLOv5 repository](https://github.com/ultralytics/yolov5).
+
 ```export.py --weights your_model.pt --include tflite```
 
 ## iOS App Details
@@ -53,4 +54,5 @@ To use YOLOv5's custom training model, convert it to a tflite model through expo
 The app is written entirely in Swift and uses the TensorFlow Lite
 [Swift library](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/swift)
 for performing object detection.
+
 The app is built using sample code from the [TensorFlow repository](https://github.com/tensorflow/examples).
