@@ -7,8 +7,6 @@
 
 This is a camera app that continuously detects the objects (bounding boxes and classes) in the frames seen by your device's back camera, using a quantized [MobileNet SSD](https://github.com/tensorflow/models/tree/master/research/object_detection) model trained on the [COCO dataset](http://cocodataset.org/). These instructions walk you through building and running the demo on an iOS device.
 
-The model files are downloaded via scripts in Xcode when you build and run. You don't need to do any steps to download TFLite models into the project explicitly.
-
 <!-- TODO(b/124116863): Add app screenshot. -->
 
 ## Prerequisites
@@ -30,7 +28,7 @@ The model files are downloaded via scripts in Xcode when you build and run. You 
 ```sudo gem install cocoapods```
 
 2. Install the pod to generate the workspace file:
-```cd lite/examples/object_detection/ios/```
+```cd yolov5-ios-tensorflow-lite/```
 ```pod install```
   If you have installed this pod before and that command doesn't work, try
 ```pod update```
@@ -43,18 +41,12 @@ At the end of this step you should have a file called ```ObjectDetection.xcworks
 5. Build and run the app in Xcode.
 You'll have to grant permissions for the app to use the device's camera. Point the camera at various objects and enjoy seeing how the model classifies things!
 
-### Note
-_Please do not delete the empty references_ to the .tflite and .txt files after you clone the repo and open the project. These references will be fulfilled once the model and label files are downloaded when the application is built and run for the first time. If you delete the references to them, you can still find that the .tflite and .txt files are downloaded to the Model folder, the next time you build the application. You will have to add the references to these files in the bundle separately in that case.
-
 ## Model Used
 
-This app uses a MobileNet SSD model trained on [COCO dataset](http://cocodataset.org/). The input image size required is 300 X 300 X 3. You can download the model [here](https://storage.googleapis.com/download.tensorflow.org/models/tflite/coco_ssd_mobilenet_v1_1.0_quant_2018_06_29.zip). You can find more information on the research on object detection [here](https://github.com/tensorflow/models/tree/master/research/object_detection).
+This app uses a [Yolov5](https://github.com/ultralytics/yolov5) model.
 
 ## iOS App Details
 
 The app is written entirely in Swift and uses the TensorFlow Lite
 [Swift library](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/swift)
 for performing image classification.
-
-Note: Objective-C developers should use the TensorFlow Lite
-[Objective-C library](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/objc).
