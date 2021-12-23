@@ -5,7 +5,7 @@
 
 ## Overview
 
-This is a camera app that continuously detects the objects (bounding boxes and classes) in the frames seen by your device's back camera, using a quantized [MobileNet SSD](https://github.com/tensorflow/models/tree/master/research/object_detection) model trained on the [COCO dataset](http://cocodataset.org/). These instructions walk you through building and running the demo on an iOS device.
+This is a camera app that continuously detects the objects (bounding boxes and classes) in the frames seen by your device's back camera, using a quantized [Yolov5](https://github.com/ultralytics/yolov5) model. These instructions walk you through building and running the demo on an iOS device.
 
 <!-- TODO(b/124116863): Add app screenshot. -->
 
@@ -44,6 +44,8 @@ You'll have to grant permissions for the app to use the device's camera. Point t
 ## Model Used
 
 This app uses a [Yolov5](https://github.com/ultralytics/yolov5) model.
+
+Convert the model trained in [Yolov5](https://github.com/ultralytics/yolov5) into a tflite model through export.py in the [Yolov5 repository](https://github.com/ultralytics/yolov5).
 
 ## iOS App Details
 
