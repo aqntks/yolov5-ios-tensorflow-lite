@@ -1,11 +1,11 @@
-# TensorFlow Lite Object Detection iOS Example Application
+# YoloV5 - TensorFlow Lite Object Detection iOS Example Application
 
 **iOS Versions Supported:** iOS 12.0 and above.
 **Xcode Version Required:** 10.0 and above
 
 ## Overview
 
-This is a camera app that continuously detects the objects (bounding boxes and classes) in the frames seen by your device's back camera, using a [Yolov5](https://github.com/ultralytics/yolov5) model. These instructions walk you through building and running the demo on an iOS device.
+This is a camera app that continuously detects the objects (bounding boxes and classes) in the frames seen by your device's back camera, using a [yolov5](https://github.com/ultralytics/yolov5) model. These instructions walk you through building and running the demo on an iOS device.
 
 <!-- TODO(b/124116863): Add app screenshot. -->
 
@@ -43,9 +43,9 @@ You'll have to grant permissions for the app to use the device's camera. Point t
 
 ## Model Used
 
-This app uses a [Yolov5](https://github.com/ultralytics/yolov5) model.
+This app uses a [yolov5](https://github.com/ultralytics/yolov5) model.
 
-Please convert the custom model trained in [Yolov5](https://github.com/ultralytics/yolov5) into a tflite model through export.py in the [Yolov5 repository](https://github.com/ultralytics/yolov5).
+To use yolov5's custom training model, convert it to a tflite model through export.py in the [yolov5 repository](https://github.com/ultralytics/yolov5).
 
 ## iOS App Details
 
