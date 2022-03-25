@@ -1,5 +1,7 @@
 # YOLOv5 - TensorFlow Lite Object Detection iOS Example Application
 
+[korean readme]
+
 **iOS Versions Supported:** iOS 12.0 and above.
 **Xcode Version Required:** 10.0 and above
 
